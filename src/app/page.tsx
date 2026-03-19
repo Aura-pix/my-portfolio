@@ -401,7 +401,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:your@email.com"
+              href="mailto:brghtjasper@email.com"
               className="bg-emerald-500 text-black px-8 py-3 font-bold tracking-widest uppercase text-sm hover:bg-emerald-400 transition-colors"
             >
               Email Me
