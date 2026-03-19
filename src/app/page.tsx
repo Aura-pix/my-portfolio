@@ -49,7 +49,7 @@ const PROJECTS = [
     description:
       "You're looking at it. Built with Next.js, TypeScript, and Tailwind CSS as both a dev portfolio and a learning project to get comfortable with the stack used in Roomly.",
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://github.com/Aura-pix",
+    link: "https://github.com/Aura-pix/my-portfolio",
     accent: "emerald",
   },
 ];
@@ -224,7 +224,7 @@ export default function Home() {
             About
           </span>
         </div>
-        <div className="grid md:grid-cols-2 gap-16">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16">
           <div className="space-y-6 text-zinc-400 leading-relaxed">
             <p>
               I&apos;m Bright — a CS student at FUT Minna, Nigeria, and an
@@ -245,6 +245,24 @@ export default function Home() {
               understands AMM mechanics, liquidity pools, and on-chain market
               dynamics from the inside. That edge shapes how I build.
             </p>
+            {/* Resume Button */}
+            <a
+              href="/resume.pdf"
+              download
+              className="inline-flex items-center gap-3 bg-emerald-500 text-black px-6 py-3 font-bold tracking-widest uppercase text-sm hover:bg-emerald-400 transition-colors mt-2"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+              </svg>
+              Download Resume
+            </a>
           </div>
           <div className="space-y-4">
             {[
@@ -256,12 +274,14 @@ export default function Home() {
             ].map(({ label, val }) => (
               <div
                 key={label}
-                className="flex justify-between border-b border-white/5 pb-4"
+                className="flex flex-col sm:flex-row sm:justify-between border-b border-white/5 pb-4 gap-1"
               >
-                <span className="text-xs text-zinc-600 tracking-widest uppercase">
+                <span className="text-xs text-zinc-600 tracking-widest uppercase shrink-0">
                   {label}
                 </span>
-                <span className="text-sm text-white font-medium">{val}</span>
+                <span className="text-sm text-white font-medium sm:text-right">
+                  {val}
+                </span>
               </div>
             ))}
           </div>
@@ -381,7 +401,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="mailto:brghtjasper@email.com"
+              href="mailto:your@email.com"
               className="bg-emerald-500 text-black px-8 py-3 font-bold tracking-widest uppercase text-sm hover:bg-emerald-400 transition-colors"
             >
               Email Me
