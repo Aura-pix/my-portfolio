@@ -161,9 +161,7 @@ export default function Home() {
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-6 pt-20">
         <div className="mb-4">
-          <span className="text-xs text-emerald-400 tracking-[0.3em] uppercase border border-emerald-500/30 px-3 py-1">
-            Available for collab
-          </span>
+          
         </div>
         <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-6">
           <span className="text-white">Building</span>
