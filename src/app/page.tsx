@@ -160,9 +160,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative z-10 min-h-screen flex flex-col justify-center max-w-5xl mx-auto px-6 pt-20">
-        <div className="mb-4">
-          
-        </div>
+       
         <h1 className="text-5xl md:text-8xl font-black tracking-tighter leading-none mb-6">
           <span className="text-white">Building</span>
           <br />
